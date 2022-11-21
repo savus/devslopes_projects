@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Mytube Video Upload</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="">
+   </head>
+   <body>
+      <!--[if lt IE 7]>
+         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <nav>
+         <a href="index.html">Home</a>
+         <a href="pages/collection1.html">Collection1</a>
+         <a href="pages/collection2.html">Collection2</a>
+         <a href="pages/collection3.html">Collection3</a>
+         <a href="form.html">New Video</a>
+      </nav>
+      <header>
+         <h1>Add New Video</h1>
+      </header>
+      <section>
+         <form action="/action_page.php" target="_blank" method="post">
+            <label for="title"><strong>Video Title</strong></label><br>
+            <input type="text" id="title" name="title" placeholder="Input value">
+            <br><br>
+            <label for="description"><strong>Description</strong></label><br>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Text area content"></textarea>
+            <br><br>
+            <label for="file"><strong>Video</strong></label><br>
+            <input type="file" id="file" name="file">
+            <br><br>
+            <select name="collection" id="collection">
+               <option value="">Choose Collection</option>
+               <option value="collection_1">Collection 1</option>
+               <option value="collection_2">Collection 2</option>
+               <option value="collection_3">Collection 3</option>
+            </select>
+            <br><br>
+            <input type="radio" name="publicity" id="public" value="public">
+            <label for="public">Public</label>
+            <input type="radio" name="publicity" id="private" value="private">
+            <label for="private">Private</label>
+            <br><br><br>
+            <input type="submit" value="Upload Video">
+            <br><br>
+         </form>
+      </section>
+      <hr>
+      <footer>
+         <h2>&copy: Copyright</h2>
+      </footer>
+      <script src="" async defer></script>
+   </body>
+</html>
